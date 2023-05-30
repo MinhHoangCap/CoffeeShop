@@ -1,0 +1,20 @@
+.news{
+
+    &Image{
+        --resolation:150px;
+        // width: var(--resolation);
+        height: var(--resolation);
+        position: relative;
+        img{
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            margin: 0 auto;
+        }
+    }
+    &Content{
+        // position: relative;
+        font-size: 1.5rem;
+        margin-top: 25px;
+
+    }
+}

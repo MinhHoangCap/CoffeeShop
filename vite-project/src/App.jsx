@@ -1,33 +1,73 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
+import HomePage from './pages/HomePage';
+import AboutUs from './pages/AboutUs';
+import Products from './pages/Products';
+import Reservation from './pages/Reservation';
+import Contact from './pages/Contact';
+
+import "./App.css"
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <HomePage/>,
+  },
+  
+  {
+    path: "/about-us",
+    element: <AboutUs/>,
+  },
+  {
+    path: "/products",
+    element: <Products/>,
+  },
+  {
+    path: "/reservation",
+    element: <Reservation/>,
+  },
+  {
+    path: "/contact",
+    element: <Contact/>,
+  },
+]);
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <div className='logo'>
+          <a href={`/`}>My Coffee Shop</a>
+        </div>
+        <nav>
+            <ul>
+              <li>
+                <a href={`/`}>Home Page</a>
+              </li>
+              <li>
+                <a href={`/about-us`}>About Us</a>
+              </li>
+              <li>
+                <a href={`/products`}>Menu</a>
+              </li>
+              <li>
+                <a href={`/reservation`}>Reservation</a>
+              </li>
+              <li>
+                <a href={`/contact`}>Contact</a>
+              </li>
+          
+            </ul>
+          </nav>
+      </header>
+       <RouterProvider router={router} />
+      <footer>
+        <p>Create by Hoang</p>
+      </footer>
+       
     </>
   )
 }

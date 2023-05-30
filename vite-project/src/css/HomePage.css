@@ -1,0 +1,16 @@
+.products {
+  display: flex;
+  flex-direction: column;
+}
+.products h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.products a {
+  text-decoration: none;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=HomePage.css.map */

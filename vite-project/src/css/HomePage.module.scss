@@ -1,0 +1,21 @@
+.advertise_news{
+    // max-width: 1200px;
+    // height: 50vh;
+    display: flex;
+    margin: 0 auto;
+    
+    .advertise{
+        flex-grow: 1;
+    }
+    .newsContent{
+        flex-grow: 1;
+        // height: 50vh;
+        .heading{
+            font-size: 2rem;
+        }
+    }
+}
+
+.banner{
+    // height: 50vh;
+}

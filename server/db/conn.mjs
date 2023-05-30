@@ -24,5 +24,5 @@ const client = new MongoClient(uri, {
   catch(e){
     console.error(e);
   }
-  let db = conn.db("coffee_shop");
+  let db = conn.db("Coffee_shop");
 export default db;

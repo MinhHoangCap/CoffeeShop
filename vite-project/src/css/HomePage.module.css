@@ -1,0 +1,13 @@
+.advertise_news {
+  display: flex;
+  margin: 0 auto;
+}
+.advertise_news .advertise {
+  flex-grow: 1;
+}
+.advertise_news .newsContent {
+  flex-grow: 1;
+}
+.advertise_news .newsContent .heading {
+  font-size: 2rem;
+}/*# sourceMappingURL=HomePage.module.css.map */

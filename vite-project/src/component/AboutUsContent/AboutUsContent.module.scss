@@ -1,0 +1,48 @@
+// @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import "../../css/Common.scss";
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    &__Content{
+        background-color: rgba(#6A4421,0.8);
+        display: flex;
+        position: relative;
+        .wrapper{
+            order: 1;
+            padding: 50px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            color: $text-color-second;
+            font-weight: bold;
+            font-size: 1.5rem;
+            // position: absolute;
+            margin-top: 40px;
+
+            button{
+                width: 150px;
+                padding: 10px;
+                border-radius: 20px;
+                margin-top: 20px;
+                &:hover{
+                    background-color: rgb(101, 40, 40);
+                    color: white;
+                    border: none;
+                }
+            }
+        }
+        &__img{
+            order: 1;
+            img{
+                width: 50vw;
+                object-fit: contain;
+            }
+            
+        }
+        .wrap{
+            order: 0;
+        }
+    }
+    
+}
