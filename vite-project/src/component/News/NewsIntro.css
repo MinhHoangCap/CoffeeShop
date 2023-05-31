@@ -9,6 +9,11 @@
   margin: 0 auto;
 }
 .newsContent {
-  font-size: 1.5rem;
   margin-top: 25px;
+}
+.newsHeading {
+  font-size: 1.25rem;
+}
+.newsDate {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=NewsIntro.css.map */

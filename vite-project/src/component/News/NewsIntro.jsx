@@ -17,8 +17,8 @@ export default class NewsIntro extends Component {
           </Col>
           <Col md={6}>
             <div className={clsx("newsContent")}>
-              <div className={styles.newsHeading}>News Heading</div>
-              <div className={styles.newsDate}> <FontAwesomeIcon icon={faCalendar}/> 18/05/2023</div>
+              <div className={clsx("newsHeading")}>News Heading</div>
+              <div className={clsx("newsDate")}> <FontAwesomeIcon icon={faCalendar}/> 18/05/2023</div>
             </div>
             
           </Col>

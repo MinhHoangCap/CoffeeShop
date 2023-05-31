@@ -1,0 +1,26 @@
+.grid_container {
+    display: grid; 
+    // grid-template-rows: 20%;
+    grid-template-columns: repeat(5, 20%);
+    // grid-template-rows: repeat(3,20vh);
+}
+
+.product
+{
+    
+    &__item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    
+    }   
+    &__name{
+        font-size: 2rem;    
+        font-weight: bold;
+    }
+    &__img{
+        width: 100%;
+        object-fit: contain;
+    }
+}

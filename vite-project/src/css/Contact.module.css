@@ -1,0 +1,58 @@
+.contact {
+  background: url("https://img.freepik.com/premium-photo/grunge-light-stone-background-with-coffee-beans-scratched-concrete-table-texture-with-roasted-grains_124507-10514.jpg") no-repeat;
+  background-size: cover;
+  font-size: 1rem;
+  height: calc(100vh - 100px - 24px);
+  position: relative;
+}
+.contact__background {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(30, 100%, 40%, 0.7);
+  border-radius: 20px;
+  color: white;
+}
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact__content {
+  margin-top: 10px;
+}
+.contact__heading {
+  text-align: center;
+  font-size: 3rem;
+}
+.contact__input {
+  display: flex;
+  width: 300px;
+  margin: 10px auto 0 auto;
+}
+.contact__input label {
+  flex: 1;
+}
+.contact__input input {
+  flex: 1;
+  border: 1px solid;
+  border-radius: 3px;
+  box-shadow: 3px 5px rgba(136, 136, 136, 0.5333333333);
+}
+.contact__btn {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.contact__btn:hover {
+  background-color: rgb(204, 102, 0);
+  color: white;
+}/*# sourceMappingURL=Contact.module.css.map */

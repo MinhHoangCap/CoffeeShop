@@ -1,0 +1,20 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+.product__name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.product__img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}/*# sourceMappingURL=ProductType.module.css.map */

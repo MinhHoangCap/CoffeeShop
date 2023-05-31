@@ -1,9 +1,10 @@
+$header-height: 100px;
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background: hsl(30, 100%, 40%);
-    height: 100px;
+    height: $header-height;
     
 }
 nav{
@@ -17,14 +18,15 @@ ul{
     margin-bottom: 0;
 }
 li{
-    padding: 10px 20px;
+    $padding-top-bottom-zone: 10px;
+    padding: $padding-top-bottom-zone 20px;
     a{
 
-        font-family: 'Great Vibes', cursive;
+        // font-family: 'Great Vibes', cursive;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
-        line-height: 100px;
+        line-height: calc($header-height - $padding-top-bottom-zone * 2 );
         text-decoration: none;
         color: white;
         &:hover{
@@ -35,10 +37,9 @@ li{
 }
 .logo{
     
-    line-height: 81px;
+    line-height: $header-height;
     margin-left: 50px;
     a{
-        font-family: 'Great Vibes', cursive;
         font-style: normal;
         font-weight: 400;
         font-size: 24px;

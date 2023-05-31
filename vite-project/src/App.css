@@ -22,11 +22,10 @@ li {
   padding: 10px 20px;
 }
 li a {
-  font-family: "Great Vibes", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 100px;
+  line-height: 80px;
   text-decoration: none;
   color: white;
 }
@@ -35,11 +34,10 @@ li a:hover {
 }
 
 .logo {
-  line-height: 81px;
+  line-height: 100px;
   margin-left: 50px;
 }
 .logo a {
-  font-family: "Great Vibes", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;

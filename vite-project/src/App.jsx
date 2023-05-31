@@ -6,8 +6,8 @@ import {
 
 import HomePage from './pages/HomePage';
 import AboutUs from './pages/AboutUs';
-import Products from './pages/Products';
-import Reservation from './pages/Reservation';
+import Products from './pages/MenuPage';
+
 import Contact from './pages/Contact';
 
 import "./App.css"
@@ -25,10 +25,7 @@ const router = createBrowserRouter([
     path: "/products",
     element: <Products/>,
   },
-  {
-    path: "/reservation",
-    element: <Reservation/>,
-  },
+
   {
     path: "/contact",
     element: <Contact/>,
@@ -53,9 +50,7 @@ function App() {
               <li>
                 <a href={`/products`}>Menu</a>
               </li>
-              <li>
-                <a href={`/reservation`}>Reservation</a>
-              </li>
+              
               <li>
                 <a href={`/contact`}>Contact</a>
               </li>
