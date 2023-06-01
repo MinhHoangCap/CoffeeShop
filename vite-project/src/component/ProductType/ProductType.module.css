@@ -1,9 +1,10 @@
 .grid_container {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product__item {
+  width: 350px;
   display: flex;
   flex-direction: column;
   text-align: center;

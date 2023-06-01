@@ -37,6 +37,11 @@
   margin-top: 20px;
   font-size: 1.25rem;
 }
+.AboutUs__heading {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .noReverse {
   display: flex;
   flex-direction: row;

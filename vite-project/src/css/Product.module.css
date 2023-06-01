@@ -18,6 +18,9 @@
   -o-object-fit: contain;
      object-fit: contain;
 }
+.product__type__heading {
+  font-weight: bold;
+}
 
 .Waiting {
   --content-height:calc(100vh - 100px - 30px);

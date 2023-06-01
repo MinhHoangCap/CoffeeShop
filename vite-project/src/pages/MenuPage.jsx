@@ -13,7 +13,7 @@ export default class MenuPage extends Component {
     }
   }
   componentDidMount(){
-    fetch("http://localhost:3000/product")
+    fetch("http://localhost:3000/product/type")
       .then((res) => res.json())
       .then((json)=>{
         this.setState({
@@ -35,34 +35,20 @@ export default class MenuPage extends Component {
   
      :(
       <div className='menu'>
-        <h2 className='menu__heading'>Coffee</h2>
-        <ProductType type="coffee"/>
-        <h2 className='menu__heading'>Tea</h2>
-        <ProductType type="tea"/>
+        {
+          items.map((item) =>(
+            <div>
+              <h2 className={styles.product__type__heading}>{item.name}</h2>
+              <ProductType type={item.name}/>
 
-
-        <div className={`${styles.grid_container}`}>
-            {items.map((item) => (
-              <div className={`${styles.product__item} `}>
-                <img src={item.image_link} className={`${styles.product__img}`} alt="Image Link" />
-                <p className={`${styles.product__name} `}>
-                    {item.product_name}
-    
-                </p>
-                <p className="product__item--price">
-                    Price: {item.price}
-    
-                </p>
-                
-              </div>
-              
-            ))}
-    
-    
-          </div>
-      </div>
+            </div>
+          ))
+        }
+       
+      </div> 
      )
-    )
+    )   
   }
+
   
 }

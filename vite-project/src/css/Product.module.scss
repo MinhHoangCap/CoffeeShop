@@ -23,6 +23,11 @@
         width: 100%;
         object-fit: contain;
     }
+    &__type{
+        &__heading{
+            font-weight: bold;
+        }
+    }
 }
 .Waiting
 {
