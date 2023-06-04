@@ -43,4 +43,10 @@
 
 .content_img img {
   border-radius: 20px 0 0 20px;
+}
+
+@media all and (max-width: 576px) {
+  .AboutUs__Content {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=AboutUs.module.css.map */

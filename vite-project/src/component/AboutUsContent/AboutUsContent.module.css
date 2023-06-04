@@ -49,4 +49,13 @@
 .noReverse.Reverse {
   display: flex;
   flex-direction: row-reverse;
+}
+
+@media all and (max-width: 576px) {
+  .noReverse {
+    flex-direction: column;
+  }
+  .noReverse.Reverse {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=AboutUsContent.module.css.map */

@@ -3,7 +3,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   background: hsl(30, 100%, 40%);
-  height: 100px;
+  min-height: 100px;
 }
 
 nav {
@@ -23,7 +23,7 @@ li {
 }
 li a {
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 24px;
   line-height: 80px;
   text-decoration: none;
@@ -39,7 +39,7 @@ li a:hover {
 }
 .logo a {
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 24px;
   text-decoration: none;
   color: white;
@@ -71,4 +71,23 @@ footer {
 }
 footer p {
   margin-bottom: 0;
+}
+
+@media all and (max-width: 576px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo {
+    text-align: center;
+    margin: 0 auto;
+  }
+  nav {
+    margin: 0;
+  }
 }/*# sourceMappingURL=App.css.map */

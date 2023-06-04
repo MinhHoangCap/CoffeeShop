@@ -4,7 +4,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     background: hsl(30, 100%, 40%);
-    height: $header-height;
+    min-height: $header-height;
     
 }
 nav{
@@ -24,11 +24,12 @@ li{
 
         // font-family: 'Great Vibes', cursive;
         font-style: normal;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 24px;
         line-height: calc($header-height - $padding-top-bottom-zone * 2 );
         text-decoration: none;
         color: white;
+
         &:hover{
             color: #9b9b9b;
         }
@@ -39,9 +40,10 @@ li{
     
     line-height: $header-height;
     margin-left: 50px;
+    
     a{
         font-style: normal;
-        font-weight: 400;
+        font-weight: bold;
         font-size: 24px;
         text-decoration: none;
         color: white;
@@ -76,4 +78,24 @@ footer{
         margin-bottom: 0;
     }
 
+}
+@media all and (max-width: 576px){
+    header{
+        display: flex;
+        flex-direction: column;
+
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .logo{
+        text-align: center;
+        margin: 0 auto;
+    }
+    nav{
+        margin: 0;
+
+    }
 }

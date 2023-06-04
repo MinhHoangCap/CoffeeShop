@@ -1,9 +1,9 @@
 .news{
 
     &Image{
-        --resolation:150px;
+        // --resolation:150px;
         // width: var(--resolation);
-        height: var(--resolation);
+        // height: var(--resolation);
         position: relative;
         img{
             width: calc(100% - 20px);
@@ -23,4 +23,8 @@
     &Date{
         font-size: 0.9rem;
     }
+}
+.newElement{
+    margin-top: 10px;
+    text-align: center;
 }

@@ -1,6 +1,4 @@
 .newsImage {
-  --resolation:150px;
-  height: var(--resolation);
   position: relative;
 }
 .newsImage img {
@@ -16,4 +14,9 @@
 }
 .newsDate {
   font-size: 0.9rem;
+}
+
+.newElement {
+  margin-top: 10px;
+  text-align: center;
 }/*# sourceMappingURL=NewsIntro.css.map */

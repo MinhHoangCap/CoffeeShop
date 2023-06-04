@@ -4,4 +4,10 @@
 .advertiseIntro a img {
   width: 100%;
   height: 100%;
+}
+
+@media all and (max-width: 576px) {
+  .advertiseIntro {
+    width: 100vw;
+  }
 }/*# sourceMappingURL=AdvertisementIntro.css.map */

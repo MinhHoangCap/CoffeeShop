@@ -51,3 +51,10 @@
         border-radius: 20px 0 0 20px;
     }
 }
+@media all and (max-width: 576px){
+    .AboutUs{
+        &__Content{
+            flex-direction: column;
+        }
+    }
+}

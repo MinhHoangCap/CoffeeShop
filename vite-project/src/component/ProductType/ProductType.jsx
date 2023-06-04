@@ -26,14 +26,7 @@ export default class ProductType extends Component {
   render() {
     const {DataisLoaded, items} = this.state;
     return(
-    (!DataisLoaded) ?   (
-      <>
-        <FontAwesomeIcon icon={faArrowsRotate} spin />
-        <h1>Waiting</h1>
-      </>
-        )
-
-   : (
+    
       <div className={`${styles.grid_container}`}>
         {items.map((item) => (
           <div className={`${styles.product__item} `}>
@@ -52,7 +45,7 @@ export default class ProductType extends Component {
 
 
       </div>
-    )
+    
   )
   }
 }

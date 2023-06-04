@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/db2ff421-2fb2-4262-b515-31445ffdbf15/resourceGroups/CoffeeApp/providers/Microsoft.Web/sites/coffeeapp2k",
+    "appService.deploySubpath": "server"
+}
