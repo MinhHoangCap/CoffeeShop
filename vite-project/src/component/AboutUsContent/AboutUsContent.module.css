@@ -58,4 +58,12 @@
   .noReverse.Reverse {
     flex-direction: column;
   }
+}
+@media all and (max-width: 768px) {
+  .noReverse {
+    flex-direction: column;
+  }
+  .noReverse.Reverse {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=AboutUsContent.module.css.map */

@@ -30,8 +30,8 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <Contact/>,
   },
-  
 ]);
+
 function App() {
 
   return (

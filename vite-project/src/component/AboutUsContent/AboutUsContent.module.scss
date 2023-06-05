@@ -72,3 +72,11 @@
         }
     }
 }
+@media all and (max-width:768px) {
+    .noReverse{
+        flex-direction: column;
+        &.Reverse{
+            flex-direction: column;
+        }
+    }
+}

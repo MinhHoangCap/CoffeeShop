@@ -42,8 +42,13 @@
 .contact__input input {
   flex: 1;
   border: 1px solid;
-  border-radius: 3px;
+  border-radius: 20px;
   box-shadow: 3px 5px rgba(136, 136, 136, 0.5333333333);
+  padding-left: 10px;
+}
+.contact__input textarea {
+  padding: 10px;
+  border-radius: 20px;
 }
 .contact__btn {
   width: 100%;
