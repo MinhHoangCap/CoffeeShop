@@ -20,6 +20,8 @@ ul {
 
 li {
   padding: 10px 20px;
+  position: relative;
+  margin: auto;
 }
 li a {
   font-style: normal;
@@ -31,6 +33,15 @@ li a {
 }
 li a:hover {
   color: #9b9b9b;
+}
+li p {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 80px;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
 }
 
 .logo {
@@ -108,4 +119,61 @@ footer p {
   nav {
     margin: 0;
   }
+}
+.loginForm {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  background-color: white;
+  width: 220px;
+  height: 220px;
+  margin-left: -40px;
+  padding: 10px;
+}
+.loginForm::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid white;
+  position: absolute;
+  top: -13px;
+  left: 56px;
+}
+
+.registerForm {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  background-color: white;
+  width: 220px;
+  height: 235px;
+  padding: 10px;
+}
+.registerForm::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 14px solid white;
+  position: absolute;
+  top: -13px;
+  left: 156px;
+}
+
+.loginBtn, .registerBtn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 80px;
+  text-decoration: none;
+  color: white;
+}
+
+.loginForm.isActive {
+  display: block;
 }/*# sourceMappingURL=App.css.map */

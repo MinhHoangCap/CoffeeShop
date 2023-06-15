@@ -20,6 +20,8 @@ ul{
 li{
     $padding-top-bottom-zone: 10px;
     padding: $padding-top-bottom-zone 20px;
+    position: relative;
+    margin: auto;
     a{
 
         // font-family: 'Great Vibes', cursive;
@@ -34,6 +36,22 @@ li{
             color: #9b9b9b;
         }
         
+    }
+    // button{
+    //     font-weight: bold;
+    //     font-size: 24px;
+    //     line-height: 80px;
+    //     text-decoration: none;
+    //     color: white;
+    // }
+    p{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 80px;
+        text-decoration: none;
+        color: white;
+        margin:  0 10px;
     }
 }
 .logo{
@@ -119,3 +137,81 @@ footer{
 
     }
 }
+.loginForm{
+    position: absolute;
+    display: none;
+    z-index: 2;
+    background-color: white;
+    width: 220px;
+    height: 220px;
+    margin-left: -40px;
+    padding: 10px;
+    &::after{
+        content: "";
+        $arrow-size: 14px;
+        width: 0; 
+        height: 0; 
+        border-left: $arrow-size solid transparent;
+        border-right: $arrow-size solid transparent;
+        
+        border-bottom: $arrow-size solid white;
+        position: absolute;
+        top: -13px;
+        left: 56px;
+
+    }
+}
+.registerForm{
+    position: absolute;
+    display: none;
+    z-index: 2;
+    background-color: white;
+    width: 220px;
+    height: 235px;
+    // margin-left: -40px;
+    padding: 10px;
+    // margin-top: 20px;
+    &::after{
+        content: "";
+        $arrow-size: 14px;
+        width: 0; 
+        height: 0; 
+        border-left: $arrow-size solid transparent;
+        border-right: $arrow-size solid transparent;
+        
+        border-bottom: $arrow-size solid white;
+        position: absolute;
+        top: -13px;
+        left: 156px;
+
+    }
+}
+.loginBtn,.registerBtn{
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 80px;
+    text-decoration: none;
+    color: white;
+    // background-color: red;
+}
+.loginForm.isActive{
+    display: block;
+}
+// .loginBtn:hover + .loginForm{
+//     display: block;
+//     transition: 0.5s;
+
+// }
+// .loginForm:hover{
+//     display: block;
+// }
+// .registerForm:hover{
+//     display: block;
+// }
+// .registerBtn:hover + .registerForm{
+//     display: block;
+
+// }

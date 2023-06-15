@@ -12,7 +12,11 @@ app.use(express.json());
 app.listen(3000, () => {
     console.log(`Server Started at ${3000}`)
 })
-
+app.use('/login', (req, res) => {
+  res.send({
+    token: 'test123'
+  });
+});
 const routes = require('./routes/routes')
 app.use('/', routes)
 

@@ -114,4 +114,5 @@ router.get('/product/type', async (req, res) => {
         await client.close();
     }
 });
+
 module.exports = router;
