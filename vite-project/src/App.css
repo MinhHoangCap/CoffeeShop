@@ -73,7 +73,7 @@ footer p {
   margin-bottom: 0;
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
@@ -91,21 +91,31 @@ footer p {
     margin: 0;
   }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 576px) {
   header {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
-  ul {
+  .header2 {
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    background: hsl(30, 100%, 40%);
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .header2 ul {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
   }
   .logo {
-    text-align: center;
-    margin: 0 auto;
+    display: none;
   }
-  nav {
-    margin: 0;
+  footer {
+    margin-bottom: 100px;
+  }
+  ul {
+    justify-content: center;
   }
 }/*# sourceMappingURL=App.css.map */

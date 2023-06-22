@@ -9,7 +9,12 @@ import AboutUs from './pages/AboutUs';
 import Products from './pages/MenuPage';
 
 import Contact from './pages/Contact';
-
+import { faHouse, faUsers } from '@fortawesome/free-solid-svg-icons';
+// import {faCupToGo}
+import { faMugHot } from '@fortawesome/free-solid-svg-icons';
+// import {faCoffeePot} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import "./App.css"
 const router = createBrowserRouter([
   {
@@ -63,6 +68,26 @@ function App() {
       <footer>
         <p>Create by Hoang</p>
       </footer>
+      
+      
+          <nav className='header2'>
+            <ul>
+              <li>
+                <a href={`/`}><FontAwesomeIcon icon={faHouse} style={{color: 'white',}} /></a>
+              </li>
+              <li>
+                <a href={`/about-us`}><FontAwesomeIcon icon={faUsers} style={{color: 'white',}} /></a>
+              </li>
+              <li>
+                <a href={`/products`}><FontAwesomeIcon icon={faMugHot} style={{color: 'white',}} /></a>
+              </li>
+              
+              <li>
+                <a href={`/contact`}><FontAwesomeIcon icon={faMessage} style={{color: "#ffffff",}} /></a>
+              </li>
+          
+            </ul>
+          </nav>
        
     </>
   )

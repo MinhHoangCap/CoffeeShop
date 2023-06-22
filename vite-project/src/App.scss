@@ -79,7 +79,8 @@ footer{
     }
 
 }
-@media all and (max-width: 576px){
+
+@media all and (max-width: 768px){
     header{
         display: flex;
         flex-direction: column;
@@ -99,23 +100,33 @@ footer{
 
     }
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 576px){
     header{
-        display: flex;
-        flex-direction: column;
-
+        display: none;
     }
-    ul{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .header2{
+        position: fixed;
+        width: 100vw;
+        height: $header-height;
+        background: hsl(30, 100%, 40%);
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        // margin-bottom: 25px;
+        ul{
+
+            display: flex;
+            flex-direction: row;
+        }
     }
     .logo{
-        text-align: center;
-        margin: 0 auto;
+        display: none;
     }
-    nav{
-        margin: 0;
-
+    footer{
+        margin-bottom: $header-height;
+    }
+    ul{
+        justify-content: center;
     }
 }

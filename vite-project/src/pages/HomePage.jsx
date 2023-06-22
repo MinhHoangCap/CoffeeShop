@@ -22,9 +22,9 @@ export default class HomePage extends Component {
                 spaceBetween={50}
                 slidesPerView={1}
                 autoplay={{
-                  delay: 2500
+                  delay: 8500
                 }}
-                speed={3000}
+                speed={1500}
               >
                 <SwiperSlide>
                   <HomePageBanner imgLink="https://cong-news.appwifi.com/wp-content/uploads/2021/07/C-slide.jpg"/>

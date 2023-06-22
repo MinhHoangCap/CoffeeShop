@@ -1,4 +1,5 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
+const apiKey = "0lhnGI4KsghFNtwOjYUZB9OsLmsal0sLZYU00lV5WfdKV2GmNLzW9vb6w67xlbqY";
 // const express =require('express')
 // const app = express();
 require('dotenv').config();
